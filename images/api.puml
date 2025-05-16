@@ -1,0 +1,11 @@
+@startuml
+!define RECTANGLE class
+RECTANGLE API {
+  +GET /api/skills
+  +POST /api/skills
+  +GET /api/members
+  +POST /api/members
+  +GET /api/comments
+  +POST /api/comments
+}
+@enduml

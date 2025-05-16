@@ -1,0 +1,16 @@
+@startuml
+class Skills {
+  +calculateNumbers(var1: int, var2: int): int
+}
+
+class Member {
+  +skillsMember(): Object
+}
+
+class Comments {
+  +createWebServer(): void
+}
+
+Skills --> Member
+Skills --> Comments
+@enduml

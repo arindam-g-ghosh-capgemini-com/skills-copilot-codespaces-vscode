@@ -1,0 +1,17 @@
+@startuml
+!define RECTANGLE class
+!define INTERFACE interface
+!define DATABASE database
+
+RECTANGLE "User" as user
+RECTANGLE "Web Server" as webServer
+RECTANGLE "Application Server" as appServer
+DATABASE "Database" as database
+
+user --> webServer : "HTTP Request"
+webServer --> appServer : "API Call"
+appServer --> database : "SQL Query"
+database --> appServer : "SQL Result"
+appServer --> webServer : "API Response"
+webServer --> user : "HTTP Response"
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+actor User
+participant "Web Browser" as Browser
+participant "Web Server" as Server
+participant "Database" as DB
+
+User -> Browser : Request Page
+Browser -> Server : HTTP Request
+Server -> DB : Query Data
+DB -> Server : Return Data
+Server -> Browser : HTTP Response
+Browser -> User : Display Page
+@enduml
