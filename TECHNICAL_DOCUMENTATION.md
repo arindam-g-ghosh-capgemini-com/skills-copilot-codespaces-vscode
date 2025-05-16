@@ -113,7 +113,6 @@ Skills --> Comments
 
 ### Appendix D: Integration Diagram (PlantUML)
 ```plantuml
-@startuml
 actor User
 participant "Web Browser" as Browser
 participant "Web Server" as Server
